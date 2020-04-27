@@ -37,9 +37,10 @@ interface Product {
 
 const Cart: React.FC = () => {
   const { increment, decrement, products } = useCart();
+  console.log(products);
 
   function handleIncrement(id: string): void {
-    // TODO
+    increment(id);
   }
 
   function handleDecrement(id: string): void {
@@ -55,7 +56,13 @@ const Cart: React.FC = () => {
   const totalItensInCart = useMemo(() => {
     // TODO RETURN THE SUM OF THE QUANTITY OF THE PRODUCTS IN THE CART
 
-    return 0;
+    const quantity = products.reduce(accumulator => {
+      accumulator += 1;
+
+      return accumulator;
+    }, 0);
+
+    return quantity;
   }, [products]);
 
   return (
