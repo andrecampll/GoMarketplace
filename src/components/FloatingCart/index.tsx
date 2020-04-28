@@ -32,7 +32,6 @@ const FloatingCart: React.FC = () => {
       return accumulator;
     }, 0);
 
-    console.log(quantity);
 
     return formatValue(quantity);
   }, [products]);

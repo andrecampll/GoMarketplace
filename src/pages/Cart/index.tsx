@@ -37,7 +37,6 @@ interface Product {
 
 const Cart: React.FC = () => {
   const { increment, decrement, products } = useCart();
-  console.log(products);
 
   function handleIncrement(id: string): void {
     increment(id);
@@ -55,8 +54,6 @@ const Cart: React.FC = () => {
 
       return accumulator;
     }, 0);
-
-    console.log(quantity);
 
     return formatValue(quantity);
   }, [products]);
