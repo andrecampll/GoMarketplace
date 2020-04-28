@@ -16,7 +16,7 @@ Typescript ⌨️
 Para obter esse projeto, siga os passos:
 1. Clone esse repositório utilizando <code>git clone</code>.
 2. Rode o comando <code> yarn </code> na raíz da pasta do projeto clonado para baixar as dependências.
-3. Rode o comando <code> yarn android (se estiver emulando em um android) ou yarn ios (se estiver emulando em um ios) </code> na raíz da pasta do projeto clonado para instalar o app no emulador.
+3. Rode o comando <code> yarn android</code> (se estiver emulando em um android) ou <code>yarn ios</code> (se estiver emulando em um ios) na raíz da pasta do projeto clonado para instalar o app no emulador.
 4. Rode <code>json-server server.json -p 3333</code> na raíz da pasta do projeto para inicializar a Fake API.
 5. Rode <code> yarn start </code> na raíz da pasta do projeto para inicializar o Metro Bundler.
 6. Abra o projeto no seu emulador.
