@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -32,7 +33,6 @@ const FloatingCart: React.FC = () => {
       return accumulator;
     }, 0);
 
-
     return formatValue(quantity);
   }, [products]);
 
@@ -48,13 +48,15 @@ const FloatingCart: React.FC = () => {
     return quantity;
   }, [products]);
 
+  const { colors, title } = useContext(ThemeContext);
+
   return (
     <Container>
       <CartButton
         testID="navigate-to-cart-button"
         onPress={() => navigation.navigate('Cart')}
       >
-        <FeatherIcon name="shopping-cart" size={24} color="#fff" />
+        <FeatherIcon name="shopping-cart" size={24} color={colors.primary} />
         <CartButtonText>{`${totalItensInCart} itens`}</CartButtonText>
       </CartButton>
 

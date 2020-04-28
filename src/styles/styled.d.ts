@@ -10,6 +10,8 @@ declare module 'styled-components' {
       secondary: string;
 
       terciary: string;
+
+      iconColor: string;
     };
   }
 }

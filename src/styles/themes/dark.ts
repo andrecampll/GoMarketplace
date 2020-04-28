@@ -3,7 +3,8 @@ export default {
 
   colors: {
     primary: '#111',
-    secondary: '#333',
+    secondary: '#222',
     terciary: '#fff',
+    iconColor: '#000',
   },
 };

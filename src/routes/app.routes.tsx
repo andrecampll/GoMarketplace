@@ -13,7 +13,11 @@ import Logo from '../assets/logo.png';
 
 const App = createStackNavigator();
 
-const AppRoutes: React.FC = () => (
+interface Props {
+  toggleTheme(): void;
+}
+
+const AppRoutes: React.FC<Props> = ({ toggleTheme }) => (
   <App.Navigator
     screenOptions={{
       headerShown: true,
@@ -25,8 +29,7 @@ const AppRoutes: React.FC = () => (
       options={{
         headerShown: true,
         headerTransparent: true,
-        headerTitle: () => <Image source={Logo} />,
-        header: () => <Header />,
+        header: () => <Header toggleTheme={toggleTheme} />,
       }}
       name="Dashboard"
       component={Dashboard}
