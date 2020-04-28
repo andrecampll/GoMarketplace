@@ -7,6 +7,7 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import Dashboard from '../pages/Dashboard';
 import Cart from '../pages/Cart';
+import Header from '../components/Header';
 
 import Logo from '../assets/logo.png';
 
@@ -25,6 +26,7 @@ const AppRoutes: React.FC = () => (
         headerShown: true,
         headerTransparent: true,
         headerTitle: () => <Image source={Logo} />,
+        header: () => <Header />,
       }}
       name="Dashboard"
       component={Dashboard}
