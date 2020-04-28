@@ -1,4 +1,5 @@
 import 'styled-components';
+import { ImageSourcePropType } from 'react-native';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -12,6 +13,10 @@ declare module 'styled-components' {
       terciary: string;
 
       iconColor: string;
+
+      actionButtonColor: string;
     };
+
+    logo: ImageSourcePropType;
   }
 }

@@ -1,3 +1,5 @@
+import Logo from '../../assets/logo.png';
+
 export default {
   title: 'light',
 
@@ -7,4 +9,6 @@ export default {
     terciary: '#000',
     iconColor: '#C4C4C4',
   },
+
+  logo: Logo,
 };

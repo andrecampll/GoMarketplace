@@ -1,3 +1,5 @@
+import LogoDark from '../../assets/logoDark.png';
+
 export default {
   title: 'dark',
 
@@ -7,4 +9,6 @@ export default {
     terciary: '#fff',
     iconColor: '#000',
   },
+
+  logo: LogoDark,
 };

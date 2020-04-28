@@ -1,8 +1,9 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useContext } from 'react';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import { View } from 'react-native';
 
+import { ThemeContext } from 'styled-components';
 import {
   Container,
   ProductContainer,
@@ -70,6 +71,8 @@ const Cart: React.FC = () => {
     return quantity;
   }, [products]);
 
+  const { colors } = useContext(ThemeContext);
+
   return (
     <Container>
       <ProductContainer>
@@ -118,7 +121,7 @@ const Cart: React.FC = () => {
         />
       </ProductContainer>
       <TotalProductsContainer>
-        <FeatherIcon name="shopping-cart" color="#fff" size={24} />
+        <FeatherIcon name="shopping-cart" color={colors.secondary} size={24} />
         <TotalProductsText>{`${totalItensInCart} itens`}</TotalProductsText>
         <SubtotalValue>{cartTotal}</SubtotalValue>
       </TotalProductsContainer>
