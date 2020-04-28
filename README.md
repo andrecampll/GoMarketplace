@@ -21,3 +21,8 @@ Para obter esse projeto, siga os passos:
 5. Happy Hacking! 🚀
 
 ⚠️ Caso o projeto não mostre os produtos, rode <code>adb reverse tcp:3333 tcp:3333</code> antes de iniciar a Fake API ⚠️
+
+Resultado:
+
+
+<img src="GoMarketplace.gif" />
