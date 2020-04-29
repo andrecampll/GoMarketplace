@@ -9,6 +9,7 @@ O diferencial é o Tema Dark, que também foi construído utilizando a Context A
 # Tecnologias Utilizadas
 React ⚛️ <br />
 React Native ⚛️ <br />
+React Navigation ⚛️ <br />
 Styled-Components 💅🏻 <br />
 Typescript ⌨️
 
